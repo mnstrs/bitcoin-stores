@@ -1,0 +1,11 @@
+.grid{
+  margin: 0 auto;
+  width: 96vw;
+  max-width: 1240px;
+}
+
+.stores{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

@@ -1,0 +1,15 @@
+.store{
+  position: relative;
+  width: 24.55vw;
+  max-width: 24.55%;
+  margin: 0.25vw 0;
+  border-radius: 3px;
+  background-color: $c2;
+  height: 25vh;
+
+  &.featured{
+    width: 49.5vw;
+    max-width: 49.5%;
+    height: 50vh;
+  }
+}

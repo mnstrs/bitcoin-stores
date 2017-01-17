@@ -1,0 +1,39 @@
+/*********************************************************************
+*  =Variables
+*
+*   Todas as variáveis globais do projeto ficam aqui.
+*********************************************************************/
+
+/*********************************************************************
+*  =Grid and typograph
+*********************************************************************/
+$PROJECT_FONT_SIZE : 16px;
+$PROJECT_BASELINE : 24px;
+
+$GRID_COLUMN_WIDTH : 60px;
+$GRID_GUTTER : 20px;
+$GRID_WIDTH : (14*$GRID_COLUMN_WIDTH) + (13*$GRID_GUTTER);
+
+/*********************************************************************
+*  =Colors
+*********************************************************************/
+
+$cWhite : #fff;
+$cBlack : #000;
+$cGrey  : #333;
+
+$c1 : #333439;
+$c2 : #D8D8D8;
+
+/*********************************************************************
+*  = icon path
+*********************************************************************/
+$iconpath: '../assets/images';
+
+
+/*
+@mixin transition($property, $duration, $animation){
+  -webkit-transition: $property $duration, $animation;
+          transition: $property $duration, $animation;
+}
+*/

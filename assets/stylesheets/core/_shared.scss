@@ -1,0 +1,14 @@
+body{
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-smooth: always;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container{
+  margin: 0 auto;
+  width: 98%;
+  max-width: 1215px;
+}
