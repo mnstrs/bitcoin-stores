@@ -1,3 +1,15 @@
+.header-spacer{
+  height: 120px;
+}
+
 .header{
+  position: fixed;
+  top: 1vw;
+  left: 1vw;
+  width: 98vw;
+  z-index: 2;
+  height: 100;
+  min-height: 70px;
   background-color: $c1;
+  border-radius: 3px;
 }
