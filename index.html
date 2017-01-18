@@ -33,9 +33,20 @@
     <div ui-view></div>
   </main>
 
+  <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+  <script>
+    let config = {
+      apiKey: "AIzaSyC1RBjaLlMMlEv1KWR-FzCOLEUSjtN_9xM",
+      authDomain: "bitcoin-stores.firebaseapp.com",
+      databaseURL: "https://bitcoin-stores.firebaseio.com",
+      storageBucket: "bitcoin-stores.appspot.com",
+      messagingSenderId: "363497435398"
+    };
+    firebase.initializeApp(config);
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
-  <script src="public/all.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/controllers/collectionController.js"></script>
 </body>
 </html>

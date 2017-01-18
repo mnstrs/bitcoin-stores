@@ -6,7 +6,9 @@ bitstores.config(($stateProvider, $urlRouterProvider) => {
 
 	$stateProvider.state('/', {
 		url: '/',
-		templateUrl: 'views/collection.html'
+		templateUrl: 'views/collection.html',
+		controller: 'CollectionController',
+		controllerAs: 'cc'
 	});
 
 });
