@@ -3,18 +3,22 @@
 
 	angular.module('bitstores').controller('CollectionController', CollectionController);
 
-	function CollectionController($scope, $stateParams, $state) {
+	function CollectionController($scope, HeaderFactory) {
 		let vm = this;
 
 		initialize();
 
 		function initialize() {
+			vm.query = HeaderFactory.currentQuery;
+
 			firebase.database().ref('stores').orderByChild('visibility').on('value', snap => {
 				$scope.$evalAsync(() => {
-					let stores = snap.val();
-					if (stores) {
+					let stores = [];
+					if (snap) {
+						snap.forEach(child => {
+							stores.push(child.val());
+						});
 						vm.stores = stores;
-						console.log(vm.stores);
 					}
 				});
 			});

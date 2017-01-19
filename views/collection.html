@@ -1,12 +1,12 @@
 <section class="grid stores">
 
-  <article class="store" ng-class="{'featured': store.visibility === 1}" ng-repeat="store in cc.stores">
+  <article class="store" ng-class="{'featured': store.visibility === 1}" ng-repeat="store in cc.stores | filter:cc.query.string">
     <figure>
-      <img src="{{store.logo}}" />
+      <img src="{{store.logo}}"/>
       <figcaption> {{store.slogan}}
         <a class="go-to-store" href="{{store.url}}" target="_blank"> visitar loja</a>
       </figcaption>
     </figure>
   </article>
-  
+
 </section>
