@@ -11,173 +11,44 @@
   <link href="public/style.css" rel="stylesheet">
 
 </head>
-<body class="home" >
+<body class="home" ng-app="bitstores">
+
   <div class="header-spacer"></div>
-  <header class="header">
+
+  <header class="header" ng-controller="HeaderController as hc">
     <a href="#">
       LOGO
     </a>
 
     <form class="search">
-      <input type="search" value="" />
+      <input type="search" ng-model="hc.query.string"/>
     </form>
 
     <button class="menu-trigger" type="submit">
     </button>
 
   </header>
+
   <main role="main">
-
-    <section class="grid stores">
-
-      <article class="store featured">
-        <figure>
-          <img src="https://www.nerdstickers.com.br/loja/inc/uploads/2016/07/logo_Nerd_Stickers.png" />
-          <figcaption> Adesivos especiais e de alta qualidade.
-            <a class="go-to-store" href="#" target="_blank"> visitar loja</a>
-          </figcaption>
-        </figure>
-      </article>
-
-      <article class="store featured">
-        <figure>
-          <img src="https://www.nerdstickers.com.br/loja/inc/uploads/2016/07/logo_Nerd_Stickers.png" />
-          <figcaption> Adesivos especiais e de alta qualidade.
-            <a class="go-to-store" href="#" target="_blank"> visitar loja</a>
-          </figcaption>
-        </figure>
-      </article>
-
-      <article class="store">
-        <figure>
-          <img src="https://www.nerdstickers.com.br/loja/inc/uploads/2016/07/logo_Nerd_Stickers.png" />
-          <figcaption> Adesivos especiais e de alta qualidade.
-            <a class="go-to-store" href="#" target="_blank"> visitar loja</a>
-          </figcaption>
-        </figure>
-      </article>
-
-      <article class="store">
-        <figure>
-          <img src="https://www.nerdstickers.com.br/loja/inc/uploads/2016/07/logo_Nerd_Stickers.png" />
-          <figcaption> Adesivos especiais e de alta qualidade.
-            <a class="go-to-store" href="#" target="_blank"> visitar loja</a>
-          </figcaption>
-        </figure>
-      </article>
-
-      <article class="store">
-        <figure>
-          <img src="https://www.nerdstickers.com.br/loja/inc/uploads/2016/07/logo_Nerd_Stickers.png" />
-          <figcaption> Adesivos especiais e de alta qualidade.
-            <a class="go-to-store" href="#" target="_blank"> visitar loja</a>
-          </figcaption>
-        </figure>
-      </article>
-
-      <article class="store">
-        <figure>
-          <img src="https://www.nerdstickers.com.br/loja/inc/uploads/2016/07/logo_Nerd_Stickers.png" />
-          <figcaption> Adesivos especiais e de alta qualidade.
-            <a class="go-to-store" href="#" target="_blank"> visitar loja</a>
-          </figcaption>
-        </figure>
-      </article>
-
-      <article class="store">
-        <figure>
-          <img src="https://www.nerdstickers.com.br/loja/inc/uploads/2016/07/logo_Nerd_Stickers.png" />
-          <figcaption> Adesivos especiais e de alta qualidade.
-            <a class="go-to-store" href="#" target="_blank"> visitar loja</a>
-          </figcaption>
-        </figure>
-      </article>
-
-      <article class="store">
-        <figure>
-          <img src="https://www.nerdstickers.com.br/loja/inc/uploads/2016/07/logo_Nerd_Stickers.png" />
-          <figcaption> Adesivos especiais e de alta qualidade.
-            <a class="go-to-store" href="#" target="_blank"> visitar loja</a>
-          </figcaption>
-        </figure>
-      </article>
-
-      <article class="store">
-        <figure>
-          <img src="https://www.nerdstickers.com.br/loja/inc/uploads/2016/07/logo_Nerd_Stickers.png" />
-          <figcaption> Adesivos especiais e de alta qualidade.
-            <a class="go-to-store" href="#" target="_blank"> visitar loja</a>
-          </figcaption>
-        </figure>
-      </article>
-
-      <article class="store">
-        <figure>
-          <img src="https://www.nerdstickers.com.br/loja/inc/uploads/2016/07/logo_Nerd_Stickers.png" />
-          <figcaption> Adesivos especiais e de alta qualidade.
-            <a class="go-to-store" href="#" target="_blank"> visitar loja</a>
-          </figcaption>
-        </figure>
-      </article>
-
-      <article class="store">
-        <figure>
-          <img src="https://www.nerdstickers.com.br/loja/inc/uploads/2016/07/logo_Nerd_Stickers.png" />
-          <figcaption> Adesivos especiais e de alta qualidade.
-            <a class="go-to-store" href="#" target="_blank"> visitar loja</a>
-          </figcaption>
-        </figure>
-      </article>
-
-      <article class="store">
-        <figure>
-          <img src="https://www.nerdstickers.com.br/loja/inc/uploads/2016/07/logo_Nerd_Stickers.png" />
-          <figcaption> Adesivos especiais e de alta qualidade.
-            <a class="go-to-store" href="#" target="_blank"> visitar loja</a>
-          </figcaption>
-        </figure>
-      </article>
-
-      <article class="store">
-        <figure>
-          <img src="https://www.nerdstickers.com.br/loja/inc/uploads/2016/07/logo_Nerd_Stickers.png" />
-          <figcaption> Adesivos especiais e de alta qualidade.
-            <a class="go-to-store" href="#" target="_blank"> visitar loja</a>
-          </figcaption>
-        </figure>
-      </article>
-
-      <article class="store">
-        <figure>
-          <img src="https://www.nerdstickers.com.br/loja/inc/uploads/2016/07/logo_Nerd_Stickers.png" />
-          <figcaption> Adesivos especiais e de alta qualidade.
-            <a class="go-to-store" href="#" target="_blank"> visitar loja</a>
-          </figcaption>
-        </figure>
-      </article>
-
-      <article class="store">
-        <figure>
-          <img src="https://www.nerdstickers.com.br/loja/inc/uploads/2016/07/logo_Nerd_Stickers.png" />
-          <figcaption> Adesivos especiais e de alta qualidade.
-            <a class="go-to-store" href="#" target="_blank"> visitar loja</a>
-          </figcaption>
-        </figure>
-      </article>
-
-      <article class="store">
-        <figure>
-          <img src="https://www.nerdstickers.com.br/loja/inc/uploads/2016/07/logo_Nerd_Stickers.png" />
-          <figcaption> Adesivos especiais e de alta qualidade.
-            <a class="go-to-store" href="#" target="_blank"> visitar loja</a>
-          </figcaption>
-        </figure>
-      </article>
-
-    </section>
-
+    <div ui-view></div>
   </main>
 
-  <script src="public/all.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+  <script>
+    let config = {
+      apiKey: "AIzaSyC1RBjaLlMMlEv1KWR-FzCOLEUSjtN_9xM",
+      authDomain: "bitcoin-stores.firebaseapp.com",
+      databaseURL: "https://bitcoin-stores.firebaseio.com",
+      storageBucket: "bitcoin-stores.appspot.com",
+      messagingSenderId: "363497435398"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers/collectionController.js"></script>
+  <script src="js/controllers/headerController.js"></script>
+  <script src="js/factory/headerFactory.js"></script>
 </body>
 </html>
