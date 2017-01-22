@@ -9,6 +9,7 @@
   background-color: $c2;
   min-height: 240px;
   text-align: center;
+  float: left;
 
   figure{
     position: absolute;
@@ -20,7 +21,8 @@
     -webkit-font-smoothing: antialiased;
 
     img{
-      max-width: 100%;
+      max-width: 250px;
+      width: 100%;
       height: auto;
     }
 
@@ -30,6 +32,7 @@
     width: 49.5%;
     max-width: 49.5%;
     height: 50vh;
+    min-height: 480px;
   }
 
 
@@ -46,18 +49,7 @@
   &:hover{
 
     figure{
-      position: absolute;
-      top: 50%;
-      left: 50%;
       transform:  perspective(1px) translate3d(-50%, -60%,0);
-      width: 80%;
-      -webkit-font-smoothing: antialiased;
-
-      img{
-        max-width: 100%;
-        height: auto;
-      }
-
     }
 
     .go-to-store{
