@@ -26,7 +26,7 @@ gulp.task('server', function(){
   browserSync.init({
     // setup for fuerza when static files
     server: {
-      proxy: 'localhost/trabalho/bitcoin/front'
+      proxy: 'localhost/bitcoin/front'
     }
 
     // setup for home
