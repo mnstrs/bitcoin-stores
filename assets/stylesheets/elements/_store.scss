@@ -1,13 +1,14 @@
 .store{
   position: relative;
-  margin: 0.25vw 0.22%;
+  margin: 0.5vw;
   display: table;
-  width: 24.55%;
-  height: 25vh;
-  max-width: 24.55%;
+  width: 24vw;
+  height: 24vw;
+  max-width: 305px;
+  max-height: 305px;
   border-radius: 3px;
-  background-color: $c2;
-  min-height: 240px;
+  background-color: $c6;
+  color: $c3;
   text-align: center;
   float: left;
 
@@ -17,6 +18,7 @@
     left: 50%;
     transform:  perspective(1px) translate3d(-50%, -50%,0);
     width: 80%;
+    max-width: 300px;
     transition: all 0.2s linear;
     -webkit-font-smoothing: antialiased;
 
@@ -26,13 +28,17 @@
       height: auto;
     }
 
+    figcaption{
+      margin-top: 1.2em;
+    }
+
   }
 
   &.featured{
-    width: 49.5%;
-    max-width: 49.5%;
-    height: 50vh;
-    min-height: 480px;
+    width: 48vw;
+    height: 48vw;
+    max-width: 625px;
+    max-height: 625px;
   }
 
 
@@ -55,7 +61,7 @@
     .go-to-store{
       opacity: 1;
       transform:  perspective(1px) translate3d(-50%, -40%,0);
-
+      background-color: $c4;
     }
 
   }
@@ -64,21 +70,24 @@
 
 
 @media screen and (max-width: 768px) {
-  .store{
-    width: 32.55%;
-    max-width: 32.55%;
+  figcaption{
+    display: none;
   }
 }
 
 @media screen and(max-width: 540px){
   .store{
-    width: 49.75%;
-    max-width: 49.75%;
+    width: 48vw;
+    height: 48vw;
 
     &.featured{
       width: 100%;
       max-width: 100%;
     }
+  }
+
+  figcaption{
+    display: none;
   }
 }
 
