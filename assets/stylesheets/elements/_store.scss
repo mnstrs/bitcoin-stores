@@ -65,6 +65,15 @@
 
 }
 
+@media(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+  .store{
+    margin: 5px;
+  }
+
+}
+
+
 @media(min-width:1280px){
   .store{
     margin: 10px;
