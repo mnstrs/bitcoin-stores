@@ -2,10 +2,8 @@
   position: relative;
   margin: 0.5vw;
   display: table;
-  width: 24vw;
-  height: 24vw;
-  max-width: 305px;
-  max-height: 305px;
+  width: 23.5vw;
+  height: 23.5vw;
   border-radius: 3px;
   background-color: $c6;
   color: $c3;
@@ -36,9 +34,8 @@
 
   &.featured{
     width: 48vw;
-    height: 48vw;
-    max-width: 625px;
-    max-height: 625px;
+    height: 23.5vw;
+
   }
 
 
@@ -68,6 +65,19 @@
 
 }
 
+@media(min-width:1280px){
+  .store{
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+
+    &.featured{
+      width: 620px;
+      height: 300px;
+    }
+
+  }
+}
 
 @media screen and (max-width: 768px) {
   figcaption{
@@ -78,11 +88,13 @@
 @media screen and(max-width: 540px){
   .store{
     width: 48vw;
-    height: 48vw;
+    height: 300px;
 
     &.featured{
       width: 100%;
       max-width: 100%;
+      height: 250px;
+
     }
   }
 

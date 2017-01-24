@@ -30,12 +30,28 @@
 
   <main role="main">
     <div ui-view></div>
+
+    <section class="new-stores">
+      <i class="overlay"></i>
+      <form>
+        <div class="field">
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div class="field">
+          <input type="text" name="link" id="link" required />
+        </div>
+        <div class="field">
+          <button class="submit" type="submit">enviar</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="credits">
+      <article></article>
+    </section>
+
   </main>
 
-  <i class="overlay"></i>
-  <form>
-    
-  </form>
 
   <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
   <script>
