@@ -1,12 +1,12 @@
 .header{
   position: fixed;
   left: 50%;
-  top: 1vw;
+  top: 10px;
   @include transform(translate(-50%, 0));
   margin: 0 auto;
   z-index: 2;
   min-height: 70px;
-  max-height: 100px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +19,7 @@
 }
 
 .header-spacer{
-  height: 7.5vw;
+  height: 100px;
   min-height: 70px;
-  margin-bottom: 1vw;
+  margin-bottom: 10px;
 }
